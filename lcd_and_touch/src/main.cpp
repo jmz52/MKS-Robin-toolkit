@@ -72,6 +72,8 @@ void setup() {
   Serial3.flush();
   if (lcdId == 0x0404) return;
 
+  lcdInit();
+
   color = YELLOW;
   bgColor = BLACK;
   lcdClear(bgColor);
